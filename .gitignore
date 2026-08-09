@@ -4,3 +4,8 @@ __pycache__/
 .vscode/
 .env
 extracted_frames/
+# Videos and Datasets
+input_videos/
+extracted_frames/
+*.mp4
+*.jpg
