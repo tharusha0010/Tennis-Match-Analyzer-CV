@@ -33,7 +33,7 @@ def interpolate_and_smooth(points):
         p2 = points[i]
         dist = np.linalg.norm(np.array(p1) - np.array(p2))
 
-        if 20 < dist < 200: 
+        if 20 < dist < 200:
             steps = int(dist // 10)
             for step in range(1, steps + 1):
                 new_x = int(p1[0] + (p2[0] - p1[0]) * (step / (steps + 1)))
@@ -86,16 +86,16 @@ def process_frame(frame, _):
     if len(ball_detections) > 0:
         annotated_frame = box_annotator.annotate(scene=annotated_frame, detections=ball_detections)
         annotated_frame = label_annotator.annotate(
-            scene=annotated_frame, 
-            detections=ball_detections, 
+            scene=annotated_frame,
+            detections=ball_detections,
             labels=["ball" for _ in ball_detections]
         )
             
     if len(player_detections) > 0:
         annotated_frame = box_annotator.annotate(scene=annotated_frame, detections=player_detections)
         annotated_frame = label_annotator.annotate(
-            scene=annotated_frame, 
-            detections=player_detections, 
+            scene=annotated_frame,
+            detections=player_detections,
             labels=["player" for _ in player_detections]
         )
         
