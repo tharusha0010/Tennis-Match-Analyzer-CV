@@ -39,6 +39,10 @@ The project processes the input video (`input_videos/test_video.mp4`) frame-by-f
 ![Final Model Dashboard](Screenshots/img_05.png)
 > *The final deployed version of the YOLOv11 Object Detection (Nano) model, ready for integration via the Roboflow Serverless Cloud API.*
 
+### 6. Inference & Trajectory Tracking (Final Output)
+![Inference Output](Screenshots/img_06.png)
+> *The final processed output showcasing real-time player detection, tennis ball tracking, and the continuous smoothed trajectory (yellow line) calculated using the Savitzky-Golay filter during a fast-paced rally.*
+
 ## 🛠️ Tech Stack
 * **Language:** Python 3.x
 * **Computer Vision:** OpenCV (`opencv-python`)
@@ -48,7 +52,7 @@ The project processes the input video (`input_videos/test_video.mp4`) frame-by-f
 
 ## 🧠 Model / Methodology
 * **Architecture:** YOLOv11 Object Detection / Instance Segmentation (Nano)
-* **Training Data:** Custom annotated dataset for `player`, `ball`, and `court` classes.
+* **Training Data:** Custom annotated dataset for `player` and `ball` classes.
 * **Deployment:** Serverless Cloud API via Roboflow `get_model` inference.
 * **Smoothing Algorithm:** Savitzky-Golay filter combined with coordinate distance interpolation.
 
