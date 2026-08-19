@@ -4,13 +4,13 @@ from inference_sdk import InferenceHTTPClient
 
 CLIENT = InferenceHTTPClient(
     api_url="https://serverless.roboflow.com",
-    api_key="rWJd7YhKrAjVu4Z395W7"
+    api_key="5tedwy8cTM2JfRId8RHu"
 )
 
 image_path = r"D:\Projects\Tennis-Match-Analyzer-CV\extracted_frames\frame_0046.jpg"
 image = cv2.imread(image_path)
 
-result = CLIENT.infer(image_path, model_id="tennis-match-analyzer-cv/2")
+result = CLIENT.infer(image_path, model_id="tennis-match-analyzer-cv-bbwo3/1")
 
 detections = sv.Detections.from_inference(result)
 
