@@ -1,6 +1,6 @@
-ultralytics
 opencv-python
+supervision
+inference
+inference-sdk
 numpy
 scipy
-lapx
-filterpy
