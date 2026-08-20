@@ -6,8 +6,8 @@ import numpy as np
 from scipy.signal import savgol_filter
 import supervision as sv
 
-MODEL_ID = "tennis-match-analyzer-cv-bbwo3/1"
-API_KEY = "5tedwy8cTM2JfRId8RHu"
+MODEL_ID = "your model ID"
+API_KEY = "your API key"
 
 SOURCE_VIDEO_PATH = r"D:\Projects\Tennis-Match-Analyzer-CV\input_videos\test_video.mp4"
 OUTPUT_DIR = r"D:\Projects\Tennis-Match-Analyzer-CV\output_videos"
