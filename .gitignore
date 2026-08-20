@@ -9,3 +9,4 @@ input_videos/
 extracted_frames/
 *.mp4
 *.jpg
+*.png
